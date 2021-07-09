@@ -25,32 +25,24 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('create-block/gutenpride', {
+registerBlockType('seas-nve/blazor-blocks', {
 	apiVersion: 2,
 	attributes: {
 		heading: {
-			type: 'string',
-			//source: 'text',
-			//selector: 'h3',
-			//default: '', // empty default
+			type: 'string'
 		},
 		text: {
-			type: 'string',
-			//source: 'text',
-			//selector: 'h3',
-			//default: '', // empty default
+			type: 'string'
 		},
 		component: {
 			type: 'string',
+			default: 'addressSelector'
 		},
-		customLoadingText: {
+		hasCustomLoadingText: {
 			type: 'boolean'
 		},
-		loading: {
-			type: 'string',
-			//source: 'text',
-			//selector: 'div.b2c-component',
-			//default: '', // empty default
+		customLoadingText: {
+			type: 'string'
 		},
 	},
 	/**

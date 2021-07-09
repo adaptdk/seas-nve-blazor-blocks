@@ -1,14 +1,14 @@
 {
 	"apiVersion": 2,
-	"name": "create-block/gutenpride",
-	"title": "Gutenpride",
+	"name": "seas-nve/blazor-blocks",
+	"title": "Blazor Blocks",
 	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"icon": "block-default",
+	"description": "Gutenberg blocks written with ESNext standard and JSX support – build step required.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "gutenpride",
+	"textdomain": "seas-blazor-blocks",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"

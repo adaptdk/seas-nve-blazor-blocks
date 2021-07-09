@@ -26,7 +26,7 @@ export default function save( { attributes } ) {
 	return (
 		<div {...useBlockProps.save()}>
 			<div class="b2c-component" id={attributes.component} data-component-id={attributes.component} data-heading={attributes.heading} data-text={attributes.text}>
-				{attributes.customLoadingText && attributes.loading ? attributes.loading : 'Loading...'}
+				{attributes.hasCustomLoadingText && attributes.customLoadingText ? attributes.customLoadingText : 'Loading...'}
 			</div>
 		</div>
 	);

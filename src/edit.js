@@ -35,11 +35,11 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	return (
 		<div {...useBlockProps()}>
 			<Placeholder
-				label={__('Self-service component', 'gutenpride')}
+				label={__('Self-service component', 'seas-blazor-blocks')}
 				isColumnLayout={true}
 			>
 				<SelectControl
-					label={__('Select component', 'gutenpride')}
+					label={__('Select component', 'seas-blazor-blocks')}
 					value={attributes.component}
 					options={[
 						{ label: 'Address Selector', value: 'addressSelector' },
@@ -50,28 +50,28 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 				/>
 
 				<TextControl
-					label={__('Heading', 'gutenpride')}
+					label={__('Heading', 'seas-blazor-blocks')}
 					value={attributes.heading}
 					onChange={(val) => setAttributes({ heading: val })}
 				/>
 
 				<TextControl
-					label={__('Text', 'gutenpride')}
+					label={__('Text', 'seas-blazor-blocks')}
 					value={attributes.text}
 					onChange={(val) => setAttributes({ text: val })}
 				/>
 
 				<ToggleControl
-					label={__('Custom loading text', 'gutenpride')}
-					checked={attributes.customLoadingText}
-					onChange={(val) => setAttributes({ customLoadingText: val})}
+					label={__('Custom loading text', 'seas-blazor-blocks')}
+					checked={attributes.hasCustomLoadingText}
+					onChange={(val) => setAttributes({ hasCustomLoadingText: val})}
 				/>
 
-				{attributes.customLoadingText ? (
+				{attributes.hasCustomLoadingText ? (
 					<TextControl
-						label={__('Loading text', 'gutenpride')}
-						value={attributes.loading}
-						onChange={(val) => setAttributes({ loading: val })}
+						label={__('Loading text', 'seas-blazor-blocks')}
+						value={attributes.customLoadingText}
+						onChange={(val) => setAttributes({ customLoadingText: val })}
 					/>
 				) : null}
 			</Placeholder>
