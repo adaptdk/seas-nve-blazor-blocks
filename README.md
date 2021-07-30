@@ -18,6 +18,20 @@ This section describes how to install the plugin and get it working.
 
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
+All the necessary javascript will be inserted on the pages automatically by magic.
+
+## Usage
+
+Select the block when inserting new content on a page or a post.
+
+![block selector](screen1.png)
+
+Select the type of component to insert and configure the other available options.
+
+![block settings](screen2.png)
+
+Save the page or post and you're done.
+
 ## Development
 
 Install dependencies:

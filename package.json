@@ -1,7 +1,7 @@
 {
 	"name": "seas-nve-blazor-blocks",
 	"version": "1.0.0",
-	"description": "Gutenberg blocks written with ESNext standard and JSX support – build step required.",
+	"description": "Insert Blazor components anywhere you wish.",
 	"author": "Jess Stopa",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
